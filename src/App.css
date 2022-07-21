@@ -76,7 +76,9 @@ ul li a:hover {
 }
 
 .active {
-  border: 0.2rem solid #000;
+  border-right: 0.2rem solid #007c95;
+  padding-right: 0.7rem;
+  color: #007c95;
 }
 
 .book-container {
