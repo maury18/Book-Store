@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Edu TAS Beginner', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.nav-display {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #007c95;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-display div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-display ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #535353;
+  font-weight: 600;
+  border-right: 0.2rem solid #535353;
+  padding-right: 0.7rem;
+  transition: all 0.5s ease;
+}
+
+ul li a:hover {
+  cursor: pointer;
+  background-color: #535353;
+  color: #fff;
+  padding: 0.7rem;
+}
+
+.fa-user {
+  font-size: 2rem;
+  color: #007c95;
+  font-weight: 700;
+}
+
+.active {
+  border: 0.2rem solid #000;
+}
+
+.book-container {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.book {
+  width: 50%;
+}
+
+.category {
+  font-size: 1.5rem;
+  color: #535353;
+  font-weight: 500;
+}
+
+.bookname {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.authorname {
+  font-size: 1.5rem;
+  color: #007c95;
+  font-weight: 500;
+}
+
+.bookstatus {
+  width: 20%;
+}
+
+.bookstatus h2 {
+  font-size: 1.5rem;
+}
+
+.fa-spinner {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #007c95;
+}
+
+.bookchapter {
+  width: 30%;
+}
+
+.bookchapter h2 {
+  font-size: 1.8rem;
+}
+
+.bookchapter h3 {
+  font-size: 1.5rem;
+}
+
+.form {
+  padding: 2rem;
+}
+
+.form h2 {
+  color: #535353;
 }
