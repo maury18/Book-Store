@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Edu TAS Beginner', cursive;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.nav-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo {
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #007c95;
+}
+
+.nav-display div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-display ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #535353;
+  font-weight: 600;
+  border-right: 0.2rem solid #535353;
+  padding-right: 0.7rem;
+  transition: all 0.5s ease;
+}
+
+ul li a:hover {
+  cursor: pointer;
+  background-color: #535353;
+  color: #fff;
+  padding: 0.7rem;
+}
+
+.fa-user {
+  font-size: 2rem;
+  color: #007c95;
+  font-weight: 700;
+}
+
+.active {
+  border-right: 0.2rem solid #007c95;
+  padding-right: 0.7rem;
+  color: #007c95;
+}
+
+.book-container {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.book {
+  width: 50%;
+}
+
+.category {
+  font-size: 1.5rem;
+  color: #535353;
+  font-weight: 500;
+}
+
+.bookname {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.authorname {
+  font-size: 1.5rem;
+  color: #007c95;
+  font-weight: 500;
+}
+
+.bookstatus {
+  width: 20%;
+}
+
+.bookstatus h2 {
+  font-size: 1.5rem;
+}
+
+.fa-spinner {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #007c95;
+}
+
+.bookchapter {
+  width: 30%;
+}
+
+.bookchapter h2 {
+  font-size: 1.8rem;
+}
+
+.bookchapter h3 {
+  font-size: 1.5rem;
+}
+
+.form {
+  padding: 2rem;
+}
+
+.form h2 {
+  color: #535353;
+}
