@@ -1,13 +1,34 @@
-const ADD_BOOK = 'ADD_NEW_BOOK_';
-const REMOVE_BOOK = 'REMOVE_BOOK';
-const initialState = [];
+const ADDED_BOOK = 'USER_ADDED_BOOK';
+const REMOVED_BOOK = 'USER_REMOVED_BOOK';
+const initialState = [
+  {
+    key: '1',
+    id: '1',
+    title: 'The monk that sold his ferrari',
+    author: 'Robin S. Sharma',
+    categories: 'History, Base on a true history, Philosophy',
+  },
+  {
+    key: '2',
+    id: '2',
+    title: 'The Mexican Drug Lords and Their Godfathers ',
+    author: 'Anabel Hernández',
+    categories: ' Based on a true history, Crime',
+  },
+  {
+    key: '3',
+    id: '3',
+    title: 'Pedro Páramo',
+    author: 'Juan Rulfo',
+    categories: 'History, Philosophy',
+  }];
 
-const booksReducer = (state = initialState, action) => {
+const bookReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_BOOK:
+    case ADDED_BOOK:
       return [...state, action.payload];
 
-    case REMOVE_BOOK:
+    case REMOVED_BOOK:
       return state.filter((book) => book.id !== action.id);
 
     default:
@@ -16,13 +37,13 @@ const booksReducer = (state = initialState, action) => {
 };
 
 export const addBook = (payload) => ({
-  type: ADD_BOOK,
+  type: ADDED_BOOK,
   payload,
 });
 
 export const removeBook = (id) => ({
-  type: REMOVE_BOOK,
+  type: REMOVED_BOOK,
   id,
 });
 
-export default booksReducer;
+export default bookReducer;
