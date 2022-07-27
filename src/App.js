@@ -9,19 +9,17 @@ import Categories from './components/categories';
 import NavBar from './components/navBar';
 import Books from './components/books';
 
-function App() {
-  return (
-    <>
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route path="/books" element={<Books />} />
-          <Route path="/categories" element={<Categories />} />
-          <Route path="/*" element={<Books />} />
-        </Routes>
-      </Router>
-    </>
-  );
-}
+const App = () => (
+  <>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/books" element={<Books />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/*" element={<Books />} />
+      </Routes>
+    </Router>
+  </>
+);
 
 export default App;
