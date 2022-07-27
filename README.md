@@ -1,6 +1,6 @@
 # Book-Store
 
-This is an app created with React that works as a Book store, the app is created with functional components, this is a Single Page Application, at this moment the app has only static books that it will be created dinamycly with React-Redux in the next coming days.
+This is an app created with React that works as a Book store, the app is created with functional components, this is a Single Page Application, at this moment the app has only static books and now you cand add some books dinamycly that were created with React-Redux.
 
 
 ## Built With:
