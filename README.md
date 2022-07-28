@@ -11,7 +11,9 @@ This is an app created with React that works as a Book store, the app is created
 
 ## Live Demo (if available)
 
-Not available
+https://curious-mermaid-e924f6.netlify.app/
+
+https://maury-bookstore.herokuapp.com/
 
 ## Getting Started:
 - Clone the repository in your computer
