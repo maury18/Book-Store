@@ -1,10 +1,11 @@
+/* stylelint-disable no-descending-specificity */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,
@@ -26,18 +27,25 @@ li {
   box-sizing: inherit;
 }
 
+nav {
+  border: 0.2rem solid #e8e8e8;
+  padding: 0;
+  margin: 0;
+}
+
 .nav-display {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  margin: 0;
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 2.3rem;
   text-decoration: none;
   font-weight: 700;
-  color: #007c95;
+  color: #0290ff;
 }
 
 .nav-display div {
@@ -53,92 +61,217 @@ li {
 }
 
 ul li a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
-  color: #535353;
+  color: #121212;
+  opacity: 0.5;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+ul li a:hover {
+  cursor: pointer;
+}
+
+.user {
+  width: 5rem;
+  filter: invert(56%) sepia(14%) saturate(1762%) hue-rotate(166deg) brightness(84%) contrast(94%);
+  cursor: pointer;
+}
+
+.active {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #121212;
+  opacity: 1;
   font-weight: 600;
   border-right: 0.2rem solid #535353;
   padding-right: 0.7rem;
   transition: all 0.5s ease;
 }
 
-ul li a:hover {
-  cursor: pointer;
-  background-color: #535353;
-  color: #fff;
-  padding: 0.7rem;
-}
-
-.fa-user {
-  font-size: 2rem;
-  color: #007c95;
-  font-weight: 700;
-}
-
-.active {
-  border-right: 0.2rem solid #007c95;
-  padding-right: 0.7rem;
-  color: #007c95;
-}
-
 .book-container {
+  margin: 2rem 0;
+  border: 0.2rem solid #e8e8e8;
   padding: 2rem;
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .book {
-  width: 50%;
+  width: 40%;
 }
 
 .category {
-  font-size: 1.5rem;
-  color: #535353;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #121212;
+  opacity: 0.5;
 }
 
 .bookname {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #121212;
 }
 
 .authorname {
   font-size: 1.5rem;
-  color: #007c95;
-  font-weight: 500;
+  font-family: 'Roboto Slab', serif;
+  color: #4386bf;
+  font-weight: 300;
+}
+
+.acctionbuttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.acctionbuttons button {
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #4386bf;
+  background-color: transparent;
+  border: none;
+  border-right: 0.1rem solid #4386bf;
+  padding-right: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.acctionbuttons button:hover {
+  cursor: pointer;
+  background-color: #4386bf;
+  color: #fff;
+  padding: 0.5rem;
 }
 
 .bookstatus {
-  width: 20%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-progress {
+  width: 50%;
+}
+
+.progress-procentage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bookstatus h2 {
-  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  color: #121212;
+  font-weight: 300;
 }
 
-.fa-spinner {
+.bookstatus p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   font-size: 2rem;
-  font-weight: 600;
-  color: #007c95;
+  text-align: center;
+  color: #121212;
+  opacity: 0.5;
+  font-weight: 300;
 }
 
 .bookchapter {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .bookchapter h2 {
-  font-size: 1.8rem;
+  font-size: 1rem;
+  color: #121212;
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
 }
 
 .bookchapter h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  color: #121212;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
 }
 
-.form {
-  padding: 2rem;
+.bookchapter button {
+  font-size: 1rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #0290ff;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 0.3rem;
 }
 
 .form h2 {
-  color: #535353;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #585555;
+}
+
+.formcontainer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.book-name {
+  width: 35%;
+  border: 0.1rem solid #535353;
+}
+
+.book-name::placeholder {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.author-name {
+  width: 15%;
+  border: 0.1rem solid #535353;
+}
+
+.author-name::placeholder {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.book-categories {
+  width: 30%;
+  border: 0.1rem solid #535353;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.form-submit {
+  width: 20%;
+  background-color: #4386bf;
+  color: #fff;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
 }
