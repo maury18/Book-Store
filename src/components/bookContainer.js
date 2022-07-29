@@ -2,6 +2,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { deleteBook } from '../redux/books/books';
+import image from '../img/progress.png';
 
 const BookContainer = ({
   title,
@@ -24,15 +25,18 @@ const BookContainer = ({
         <h2 className="bookname">{title}</h2>
         <h3 className="authorname">{author}</h3>
         <div className="acctionbuttons">
-          <button type="button">Comments</button>
-          <button type="button" onClick={handleRemoveBook}>Remove</button>
-          <button type="button">Edit</button>
+          <button type="button" className="comments">Comments</button>
+          <button type="button" className="remove" onClick={handleRemoveBook}>Remove</button>
+          <button type="button" className="comments">Edit</button>
         </div>
       </div>
 
       <div className="bookstatus">
-        <i className="fa-solid fa-spinner" />
-        <h2>75% completed</h2>
+        <img className="img-progress" alt="progress-circle-bar" src={image} />
+        <div className="progress-procentage">
+          <h2>75%</h2>
+          <p>completed</p>
+        </div>
       </div>
 
       <div className="bookchapter">

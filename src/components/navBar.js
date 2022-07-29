@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import user from '../img/user.svg';
 
 function NavBar() {
   return (
@@ -25,7 +26,7 @@ function NavBar() {
           </ul>
         </div>
         <div className="usericon">
-          <i className="far fa-user" />
+          <img className="user" alt="user-icon" src={user} />
         </div>
       </div>
     </nav>

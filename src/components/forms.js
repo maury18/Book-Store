@@ -39,9 +39,9 @@ const Form = () => {
       <form onSubmit={submitBookToStore} className="form-container">
         <h2>ADD NEW BOOK</h2>
         <div className="formcontainer">
-          <input name="title" type="text" onChange={handleChange} placeholder="Book Title" required />
-          <input name="author" type="text" onChange={handleChange} placeholder="Author" required />
-          <select name="category" id="categories" onChange={handleChange} required>
+          <input name="title" type="text" className="book-name" onChange={handleChange} placeholder="Book Title" required />
+          <input name="author" type="text" className="author-name" onChange={handleChange} placeholder="Author" required />
+          <select name="category" id="categories" className="book-categories" onChange={handleChange} required>
             <option value="">Select a category</option>
             <option value="History">History</option>
             <option value="Based on a true history">Based on a true history</option>
@@ -49,7 +49,7 @@ const Form = () => {
             <option value="Crime">Crime</option>
             <option value="Litterature">Litterature</option>
           </select>
-          <button type="submit">Add Book</button>
+          <button type="submit" className="form-submit">Add Book</button>
         </div>
       </form>
     </section>
